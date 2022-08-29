@@ -1,0 +1,149 @@
+body {
+  font-size: .875rem;
+}
+.bodyClass{
+  background-image: url(./images/fon2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  min-width: 187px;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: relative;
+    padding: 0
+  }
+  #black-nav{
+    margin-bottom: 0;
+  }
+}
+
+.look_rooms, .clients_in_r{
+  background-color: #0000000d; margin-bottom: 10px; padding: 10px;
+}
+
+
+.look_rooms>div{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img_prev{height: 200px;margin: 10px;}
+.images{position: relative;}
+.images>img{height: 100px;width: 112px;}
+.full_image, .images>button, .full_image>button{position: absolute;}
+.full_image{z-index: 5;}
+.full_image>button{width: 1rem; opacity: 80%;}
+.parent_load_img{display: flex;gap: 10px;flex-wrap: wrap;align-self: start;justify-content: space-around;}
+#load_img{width:7rem;}
+
+#wind_b,#add_room{
+  display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+}
+#add_room>div{display: flex;column-gap: 10px;}
+
+#price_num,#add_number,#add_price{
+max-width: 100px;
+}
+
+
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@media (max-width: 767.98px) {
+  .position-sticky {
+    display: flex;justify-content: space-between;
+  }
+}
+
+@media (max-width: 412px) {
+  .position-sticky {
+    display: flex;flex-direction: column;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+
